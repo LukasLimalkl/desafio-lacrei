@@ -3,16 +3,12 @@ import * as Styled from './styles';
 export default function Header() {
   return (
     <Styled.Container>
-      <header>
-        <Styled.Logo>
-          <Styled.LinkStyle href="/">Lacrei</Styled.LinkStyle>
-        </Styled.Logo>
-        <nav>
-          <Styled.LinkStyle href="/">Home</Styled.LinkStyle>
-          <Styled.LinkStyle href="/user">User</Styled.LinkStyle>
-          <Styled.LinkStyle href="/profissional">profissional</Styled.LinkStyle>
-        </nav>
-      </header>
+      <Styled.Logo href="/">Lacrei</Styled.Logo>
+      <Styled.NavLista>
+        <Styled.StyledLink href="/">Home</Styled.StyledLink>
+        <Styled.StyledLink href="/user">Pessoa Usuária</Styled.StyledLink>
+        <Styled.StyledLink href="/profissional">Profissional</Styled.StyledLink>
+      </Styled.NavLista>
     </Styled.Container>
   );
 }
