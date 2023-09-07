@@ -6,8 +6,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   background-color: #eee;
   width: 100vw;
-  height: 60px;
-  flex-shrink: 0;
+  height: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,14 +17,13 @@ export const Container = styled.div`
 `;
 
 export const Logo = styled(Link)`
-  flex-shrink: 0;
   color: #018762;
-  font-size: 32px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-decoration: none;
-  padding-left: 64px;
+  padding-left: 4rem;
   &:hover {
     opacity: 0.6;
   }
@@ -35,22 +33,32 @@ export const NavLista = styled.nav`
   display: flex;
   align-items: center;
 
-  width: 327px;
-  height: 22.373px;
+  width: 21rem;
+  height: 1.4rem;
   justify-content: space-between;
   align-items: center;
-  flex-shrink: 0;
-  gap: 2.5rem;
-  margin-right: 64px;
+  gap: 1.6rem;
+  margin-right: 4rem;
+
+  @media (max-width: 48rem) {
+    flex-direction: row;
+    gap: 0.65rem;
+    height: 3.2rem;
+    width: 0.5rem;
+  }
 `;
 
 export const StyledLink = styled(Link)`
   color: #1f1f1f;
-  font-size: 16px;
+  font-size: 1rem; /* 16px / 16px = 1rem */
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-decoration: none;
+
+  @media (max-width: 48rem) {
+    font-size: 0.8rem;
+  }
 
   &:hover {
     opacity: 0.6;

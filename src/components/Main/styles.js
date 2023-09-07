@@ -4,14 +4,14 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100vw;
-  height: 31.25rem;
+  height: 32rem;
   display: flex;
   justify-content: space-between;
   padding: 4rem 4rem 1rem 4rem;
 
   .mainContainer {
-    height: 26.25rem;
-    width: 29rem;
+    height: 28rem;
+    width: 32rem;
     flex-direction: column;
 
     h1 {
@@ -91,6 +91,71 @@ export const Container = styled.div`
       width: 9rem;
       height: 2rem;
       font-size: 0.8rem;
+    }
+  }
+
+  .proBtn {
+    width: 12rem;
+    height: 3rem;
+    border-radius: 8px;
+    border: 2px solid #018762;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+
+    color: #018762;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    @media (max-width: 542px) {
+      width: 9rem;
+      height: 2rem;
+      font-size: 0.8rem;
+    }
+  }
+
+  .image {
+    width: 36rem;
+    height: 28rem;
+
+    .foto {
+      width: 36rem;
+      height: 28rem;
+      margin-right: 1.5rem;
+    }
+
+    @media (max-width: 1224px) {
+      width: 29rem;
+      height: 24rem;
+      .foto {
+        width: 28rem;
+        height: 22rem;
+      }
+    }
+
+    @media (max-width: 1124px) {
+      width: 25rem;
+      height: 19rem;
+      margin-top: 2rem;
+      .foto {
+        width: 24rem;
+        height: 18rem;
+      }
+    }
+
+    @media (max-width: 542px) {
+      width: 21rem;
+      height: 16rem;
+      margin-right: 0;
+      .foto {
+        width: 20rem;
+        height: 15rem;
+      }
     }
   }
 `;

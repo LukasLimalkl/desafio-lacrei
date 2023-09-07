@@ -8,14 +8,15 @@ export default function MainHome() {
       <div className="mainContainer">
         <h1>Boas vindas a Lacrei Saúde</h1>
         <p>Uma platarforma segura e acolhedora para comunidade LGBTQIAPN+</p>
+
+        <div className="btnContainer">
+          <button className="userBtn">Pessoa Usuária</button>
+          <button className="proBtn">Profissional</button>
+        </div>
       </div>
 
-      <div className="btnContainer">
-        <button className="userBtn">Pessoa Usuária</button>
-        <button className="proBtn">Profissional</button>
-      </div>
       <div className="image">
-        <Image src={ImageHome} alt="" />
+        <Image src={ImageHome} alt="" className="foto" />
       </div>
     </Styled.Container>
   );
