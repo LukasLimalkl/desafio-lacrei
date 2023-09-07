@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <Styled.Container>
       <Header />
-			<MainHome/>
+      <MainHome />
     </Styled.Container>
   );
 }
