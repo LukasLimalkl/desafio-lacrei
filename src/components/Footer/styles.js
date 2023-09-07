@@ -4,11 +4,12 @@ import Link from 'next/link';
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: calc(100vw - 8rem);
+  width: 100vw;
+  margin-right: -8rem;
   margin-left: 4rem;
   border-top: 1px solid #b0e0d3;
 
-  > nav {
+  .navLink {
     margin-top: 2rem;
     display: flex;
     gap: 2.5rem;
@@ -17,6 +18,20 @@ export const Container = styled.div`
 
   .active {
     font-weight: 700;
+  }
+
+  p {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #515151;
+  }
+
+  .image {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    cursor: pointer;
   }
 `;
 
@@ -33,4 +48,13 @@ export const FooterLink = styled(Link)`
   }
 `;
 
-export const LinkSocialMedia = styled(Link)``;
+export const LinkSocialMedia = styled(Link)`
+  .iconSocialMedia {
+    width: 2rem;
+    height: 2rem;
+
+    &:hover {
+      opacity: 0.6rem;
+    }
+  }
+`;

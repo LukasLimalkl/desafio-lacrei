@@ -36,20 +36,20 @@ export default function Footer() {
           href="https://www.instagram.com/lacrei.saude/"
           target="_blank"
         >
-          <Image src={Insta} alt="Instagram" />
+          <Image src={Insta} alt="Instagram" className="iconSocialMedia" />
         </Styled.FooterLink>
         <Styled.FooterLink
           href="https://www.facebook.com/lacrei.saude"
           target="_blank"
         >
-          <Image src={Face} alt="Face" />
+          <Image src={Face} alt="Face" className="iconSocialMedia" />
         </Styled.FooterLink>
 
         <Styled.FooterLink
           href="https://www.linkedin.com/company/lacrei"
           target="_blank"
         >
-          <Image src={Linkedin} alt="Linkedin" />
+          <Image src={Linkedin} alt="Linkedin" className="iconSocialMedia" />
         </Styled.FooterLink>
       </div>
 

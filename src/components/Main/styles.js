@@ -58,8 +58,8 @@ export const Container = styled.div`
   .btnContainer {
     width: 100%;
     display: flex;
-    justify-content: space-between;
     margin-top: 4rem;
+    gap: 4rem;
 
     @media (max-width: 642px) {
       flex-direction: column;
@@ -120,32 +120,14 @@ export const Container = styled.div`
   }
 
   .image {
-    width: 36rem;
+    width: 34rem;
     height: 28rem;
-
-    .foto {
-      width: 36rem;
-      height: 28rem;
-      margin-right: 1.5rem;
-    }
-
-    @media (max-width: 1224px) {
-      width: 29rem;
-      height: 24rem;
-      .foto {
-        width: 28rem;
-        height: 22rem;
-      }
-    }
+    display: flex;
 
     @media (max-width: 1124px) {
       width: 25rem;
       height: 19rem;
       margin-top: 2rem;
-      .foto {
-        width: 24rem;
-        height: 18rem;
-      }
     }
 
     @media (max-width: 542px) {
