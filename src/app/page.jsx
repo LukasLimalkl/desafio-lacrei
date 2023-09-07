@@ -1,10 +1,12 @@
+import Header from '@/components/Header';
 import MainHome from '@/components/Main';
 import * as Styled from './styles';
 
 export default function Home() {
   return (
     <Styled.Container>
-      <MainHome />
+      <Header />
+			<MainHome/>
     </Styled.Container>
   );
 }

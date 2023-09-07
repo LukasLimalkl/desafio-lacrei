@@ -1,9 +1,9 @@
-import LastPage from '@/components/Profissional';
+import Header from '@/components/Header';
 
 export default function Profissional() {
   return (
     <div>
-      <LastPage />
+      <Header />
     </div>
   );
 }

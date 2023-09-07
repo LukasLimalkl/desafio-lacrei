@@ -1,9 +1,9 @@
-import Pessoa from '@/components/Pessoa';
+import Header from '@/components/Header';
 
 export default function User() {
   return (
     <div>
-      <Pessoa />
+      <Header />
     </div>
   );
 }
