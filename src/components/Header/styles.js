@@ -11,6 +11,10 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  .active {
+    color: #018762;
+  }
 `;
 
 export const Logo = styled(Link)`
@@ -50,9 +54,5 @@ export const StyledLink = styled(Link)`
 
   &:hover {
     opacity: 0.6;
-  }
-
-  &.active {
-    color: #018762;
   }
 `;

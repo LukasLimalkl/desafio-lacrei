@@ -1,7 +1,9 @@
+import LastPage from '@/components/Profissional';
+
 export default function Profissional() {
   return (
     <div>
-      <Profissional />
+      <LastPage />
     </div>
   );
 }
