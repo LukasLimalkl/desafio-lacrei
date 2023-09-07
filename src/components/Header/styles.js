@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   background-color: #eee;
-  width: 100%;
+  width: 100vw;
   height: 60px;
   flex-shrink: 0;
   display: flex;
@@ -22,19 +22,41 @@ export const Logo = styled(Link)`
   line-height: normal;
   text-decoration: none;
   padding-left: 64px;
+	&:hover{
+    opacity: 0.6;
+  }
 `;
 
-export const NavLista = styled.div`
+export const NavLista = styled.nav`
   display: flex;
   align-items: center;
+
+	width: 327px;
+	height: 22.373px;
+	justify-content: space-between;
+	align-items: center;
+	flex-shrink: 0;
+  gap: 2.5rem;
+	margin-right: 64px;
+
+
+
 `;
 
 export const StyledLink = styled(Link)`
-  color: #1f1f1f;
+  color: #1F1F1F;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-decoration: none;
-  padding-right: 64px;
+
+
+	&:hover{
+    opacity: 0.6;
+  }
+
+  &.active{
+    color:#018762;
+  }
 `;
