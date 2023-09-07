@@ -1,17 +1,34 @@
+'use client';
+
 import Image from 'next/image';
 import * as Styled from './styles';
 
+import { usePathname } from 'next/navigation';
 import Face from '../../assets/FacebookLogo.svg';
 import Insta from '../../assets/InstagramLogo.svg';
 import Linkedin from '../../assets/LinkedinLogo.svg';
 
 export default function Footer() {
+  const router = usePathname();
+
   return (
     <Styled.Container>
-      <nav>
-        <Styled.FooterLink href="/">Home</Styled.FooterLink>
-        <Styled.FooterLink href="/user">Pessoa Usuária</Styled.FooterLink>
-        <Styled.FooterLink href="/profissional">Profissional</Styled.FooterLink>
+      <nav className="navLink">
+        <Styled.FooterLink href="/" className={router === '/' ? 'active' : ''}>
+          Home
+        </Styled.FooterLink>
+        <Styled.FooterLink
+          href="/user"
+          className={router === '/' ? 'active' : ''}
+        >
+          Pessoa Usuária
+        </Styled.FooterLink>
+        <Styled.FooterLink
+          href="/profissional"
+          className={router === '/' ? 'active' : ''}
+        >
+          Profissional
+        </Styled.FooterLink>
       </nav>
 
       <div className="image">
