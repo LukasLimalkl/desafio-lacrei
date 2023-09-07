@@ -1,5 +1,5 @@
-// styles.js do componente Header
 'use client';
+
 import Link from 'next/link';
 import styled from 'styled-components';
 
