@@ -3,11 +3,10 @@ import { Nunito } from 'next/font/google';
 import * as Styled from './styles';
 
 const nunito = Nunito({
-	weight:'400',
-	subsets:['latin'],
-	display: 'swap',
-})
-
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export default function Home() {
   return (
