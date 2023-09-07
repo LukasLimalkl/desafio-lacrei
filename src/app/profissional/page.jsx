@@ -1,4 +1,8 @@
+'use client';
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
+import Prouser from '@/components/Pro';
+import { useEffect } from 'react';
 
 export default function Profissional() {
   const setPageTitle = () => {
@@ -12,6 +16,8 @@ export default function Profissional() {
   return (
     <div>
       <Header />
+      <Prouser />
+      <Footer />
     </div>
   );
 }
