@@ -4,8 +4,7 @@ import Link from 'next/link';
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 100vw;
-  margin-right: -8rem;
+width: calc(100vw - 8rem);
   margin-left: 4rem;
   border-top: 1px solid #b0e0d3;
 
