@@ -16,8 +16,8 @@ export default function Header() {
           Home
         </Styled.StyledLink>
         <Styled.StyledLink
-          href="/user"
-          className={router === '/user' ? 'active' : ''}
+          href="/pessoa-usuaria"
+          className={router === '/pessoa-usuaria' ? 'active' : ''}
         >
           Pessoa Usuária
         </Styled.StyledLink>

@@ -17,7 +17,7 @@ export const Container = styled.div`
   }
 
   .active {
-    font-weight: 700;
+    font-weight: 800;
   }
 
   p {

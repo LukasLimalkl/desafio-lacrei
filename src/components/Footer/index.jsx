@@ -18,14 +18,14 @@ export default function Footer() {
           Home
         </Styled.FooterLink>
         <Styled.FooterLink
-          href="/user"
-          className={router === '/' ? 'active' : ''}
+          href="/pessoa-usuaria"
+          className={router === '/pessoa-usuaria' ? 'active' : ''}
         >
           Pessoa Usuária
         </Styled.FooterLink>
         <Styled.FooterLink
           href="/profissional"
-          className={router === '/' ? 'active' : ''}
+          className={router === '/profissional' ? 'active' : ''}
         >
           Profissional
         </Styled.FooterLink>

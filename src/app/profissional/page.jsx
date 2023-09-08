@@ -1,7 +1,7 @@
 'use client';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
-import Prouser from '@/components/Pro';
+import ProUser from '@/components/Pro';
 import { useEffect } from 'react';
 
 export default function Profissional() {
@@ -16,7 +16,7 @@ export default function Profissional() {
   return (
     <div>
       <Header />
-      <Prouser />
+      <ProUser />
       <Footer />
     </div>
   );

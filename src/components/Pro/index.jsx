@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Pro from '../../assets/profissional.svg';
 import * as Styled from './styles';
 
-export default function Prouser() {
+export default function ProUser() {
   return (
     <Styled.Container>
       <div className="mainContainer">
