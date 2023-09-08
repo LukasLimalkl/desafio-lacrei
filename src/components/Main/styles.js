@@ -31,7 +31,7 @@ export const Container = styled.div`
 
     @media (max-width: 542px) {
       height: auto;
-      width: 22rem;
+      width: 20rem;
       margin-bottom: 2rem;
       h1 {
         font-size: 2rem;
@@ -43,7 +43,7 @@ export const Container = styled.div`
 
     @media (max-width: 432px) {
       height: auto;
-      width: 18rem;
+      width: 15rem;
       margin-bottom: 2rem;
 
       h1 {
@@ -131,7 +131,7 @@ export const Container = styled.div`
     }
 
     @media (max-width: 542px) {
-      width: 21rem;
+      width: 20rem;
       height: 16rem;
       margin-right: 0;
       .foto {
@@ -139,5 +139,12 @@ export const Container = styled.div`
         height: 15rem;
       }
     }
+  }
+
+  @media (max-width: 880px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
   }
 `;

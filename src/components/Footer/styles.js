@@ -32,6 +32,16 @@ export const Container = styled.div`
     margin-top: 2rem;
     cursor: pointer;
   }
+
+  @media (max-width: 400px) {
+    margin: 0;
+    padding-left: 1rem;
+    width: 100vw;
+    height: auto;
+    p {
+      font-size: 0.6rem;
+    }
+  }
 `;
 
 export const FooterLink = styled(Link)`

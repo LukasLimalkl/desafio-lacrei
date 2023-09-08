@@ -14,6 +14,16 @@ export const Container = styled.div`
   .active {
     color: #018762;
   }
+
+  @media (max-width: 600px) {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0;
+    margin: 0;
+  }
 `;
 
 export const Logo = styled(Link)`
@@ -26,6 +36,16 @@ export const Logo = styled(Link)`
   padding-left: 4rem;
   &:hover {
     opacity: 0.6;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 1rem;
+    padding-left: 0;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 0%.4;
+    padding-left: 0;
   }
 `;
 
@@ -40,11 +60,18 @@ export const NavLista = styled.nav`
   gap: 1.6rem;
   margin-right: 4rem;
 
-  @media (max-width: 48rem) {
-    flex-direction: row;
-    gap: 0.65rem;
-    height: 3.2rem;
-    width: 0.5rem;
+  @media (max-width: 600px) {
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  @media (max-width: 400px) {
+    gap: 0.6rem;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
   }
 `;
 

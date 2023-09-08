@@ -33,7 +33,7 @@ export const Container = styled.div`
 
     @media (max-width: 542px) {
       height: auto;
-      width: 22rem;
+      width: 20rem;
       margin-bottom: 2rem;
       h1 {
         font-size: 2rem;
@@ -45,7 +45,7 @@ export const Container = styled.div`
 
     @media (max-width: 432px) {
       height: auto;
-      width: 18rem;
+      width: 16rem;
       margin-bottom: 2rem;
 
       h1 {
@@ -70,13 +70,24 @@ export const Container = styled.div`
     }
 
     @media (max-width: 542px) {
-      width: 21rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20rem;
       height: 16rem;
       margin-right: 0;
+      margin-bottom: 4rem;
       .foto {
         width: 20rem;
         height: 15rem;
       }
     }
+  }
+
+  @media (max-width: 880px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
   }
 `;
